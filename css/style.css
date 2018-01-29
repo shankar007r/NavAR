@@ -1,0 +1,12 @@
+.navbar-brand {
+    float: none;
+    font-size: 28px;
+}
+
+.ui-menu {
+    list-style-type: none;
+}
+
+.ui-menu-item {
+    padding: 5px 0;
+}

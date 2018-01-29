@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>INST704 Final</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Theme CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- jQuery UI (for autocomplete) -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top text-center">
+		<div style="padding-top:12px;">
+      		<a class="navbar-brand" href="#">HCI HoloNav</a>
+		</div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template text-center">
+        <h1>Welcome</h1>
+        <p class="lead">Enter your destination to get started.</p>
+      </div>
+
+	   <form>
+			<div class="form-group">
+				<label for="formGroupExampleInput2">Destination</label>
+				<input id="txtDestination" type="text" class="form-control input-lg" id="formGroupExampleInput2" placeholder="Where to?">
+			</div>
+			<div class="text-center">
+				<button type="button" class="btn btn-primary btn-lg">Navigate</button>
+			</div>
+		</form>
+
+    </div>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Theme JavaScript -->
+	<script src="js/main.js"></script>
+
+	<!-- jQuery UI (for autocomplete) -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script type="text/javascript">
+		$( function() {
+			var availableTags = [
+			"Capital One Field at Maryland Stadium",
+			"Clarice Smith Performing Arts Center",
+			"Driskell Center",
+			"Eppley Recreation Center",
+			"Health Center",
+			"Memorial Chapel",
+			"M Square",
+			"Office of the Bursar",
+			"Office of the Registrar",
+			"Samuel Riggs IV Alumni Center",
+			"Adele H. Stamp Student Union",
+			"TerpZone",
+			"UMD Golf Course",
+			"Visitor Center",
+			"Xfinity Center"
+			];
+
+			$( "#txtDestination" ).autocomplete({
+			source: availableTags
+			});
+		} );
+  </script>
+</body>
+
+</html>
